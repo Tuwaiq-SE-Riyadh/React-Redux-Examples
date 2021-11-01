@@ -1,0 +1,23 @@
+.nav{
+  display: flex;
+  background-color: rgba(165, 42, 42, 0.267);
+  font-size: 30px;
+  gap: 30px;
+  height: 90px;
+  padding-top: 20px;
+}
+
+.LogIn{
+  display: flex;
+  gap: 20px;
+}
+input{
+  height: 40px;
+  padding: 10px;
+}
+button{
+  height: 40;
+  padding: 10px;
+
+
+}
