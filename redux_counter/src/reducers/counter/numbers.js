@@ -16,6 +16,10 @@
             return {
             number:0
             };
+        case "INCREMENT_BY":
+            return{
+                number: payload
+            }
         default:
             return state;
         }
@@ -42,3 +46,10 @@
             type: "RESET",
             };
         };
+
+        export const addEithNumber = (p)=>{
+            return{
+                type: "INCREMENT_BY",
+                payload: p
+            }
+        }

@@ -2,11 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 import {useDispatch, useSelector } from "react-redux"
-import {plusOne, minusOne, reset } from "./reducers/counter/numbers"
+import {plusOne, minusOne, reset, addEithNumber } from "./reducers/counter/numbers"
 import { useState } from "react"
 
 function App() {
-  // const [num , setNum] = useState(0)
 
   const dispatch = useDispatch();
 
@@ -38,6 +37,16 @@ function App() {
     dispatch(action)
   }
 
+  const addBy = ()=>{
+    dispatch(addEithNumber(theData));
+  }
+
+  let [theData , setTheData] = useState(0)
+
+  const getdata = (e)=>{
+    setTheData( e.target.value)
+    // console.log(theData)
+  }
 
   return (
     <div className="App">
@@ -45,6 +54,9 @@ function App() {
         <button onClick={add}>plus One</button>
         <button onClick={minus}>Minus one</button>
         <button onClick={resetData}>Reset</button>
+        <hr/>
+        <input type="number" onChange={getdata}/>
+        <button onClick={addBy}>add By</button>
     </div>
   );
 }
