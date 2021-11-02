@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {addOne,minusOne, clearCounter, multiplyByNum} from "./reducers/user/count"
+import {addOne,minusOne, clearCounter, multiplyByNum} from "./reducers/counter/count"
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
 

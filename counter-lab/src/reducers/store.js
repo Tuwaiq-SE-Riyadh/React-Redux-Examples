@@ -1,5 +1,5 @@
 import { createStore, combineReducers} from "redux";
-import FunCounter from "./user/count";
+import FunCounter from "./counter/count";
 
 
 
